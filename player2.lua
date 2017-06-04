@@ -36,12 +36,6 @@ function p2.update(dt)
 		p2.moveY(dt * p2.speed)
 	end
 
-	if love.keyboard.isDown("space") then
-		p2.x = love.graphics.getWidth() - 60
-		p2.y = 0
-		p2.point = 0
-	end
-
 	if p2.x > t.x and p2.x + 60 < t.x + 70 and p2.y > t.y and p2.y + 60 < t.y + 70 then
 		p2.x = love.graphics.getWidth() - 60
 		p2.y = 0

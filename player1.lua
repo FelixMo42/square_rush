@@ -36,12 +36,6 @@ function p1.update(dt)
 		p1.moveY(dt * p1.speed)
 	end
 
-	if love.keyboard.isDown("space") then
-		p1.x = 0
-		p1.y = 0
-		p1.point = 0
-	end
-
 	if p1.x > t.x and p1.x + 60 < t.x + 70 and p1.y > t.y and p1.y + 60 < t.y + 70 then
 		p1.x = 0
 		p1.y = 0
